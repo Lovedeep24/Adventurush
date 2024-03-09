@@ -1,0 +1,33 @@
+.Body1{
+    width: 119.5rem;
+height: 41.625rem;
+flex-shrink: 0;
+border:2px solid black;
+}
+/* .heading1{
+
+} */
+.choose{
+    width: 16.6875rem;
+height: 3.375rem;
+flex-shrink: 0;
+background: #F00;
+color: #FFF;
+font-family: Poppins;
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.bodySlider{
+    width: 42.375rem;
+height: 17.8125rem;
+flex-shrink: 0;
+}
+.SliderComp{
+    width: 12.25rem;
+    height: 16.1875rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+background: #3F2424;
+}
