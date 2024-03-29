@@ -1,3 +1,4 @@
+
 .searchbar{
     color: #FFF;
     font-family:INTER;
@@ -18,7 +19,6 @@
 
 }
 .navbar{
-   
     border: 1px solid transparent;
     width: 118rem;
     height: 5.5rem;
@@ -34,7 +34,7 @@ flex-shrink: 0;
 border: 1px solid #000;
 background: #FFF;
 } */
-#navItem{
+#anchor{
     color: #000;
     font-family: Poppins;
     font-size: 1.875rem;
@@ -42,13 +42,21 @@ background: #FFF;
     font-weight: 400;
     line-height: normal;
     display: inline-block;
-    /* margin: 5.5rem,60.4rem,260rem, ; */
     border: 1px solid #D9D9D9;
     background: #FFF;
-    /* width: 18.8125rem; */
     width: 24.87%;
     height: 4.4rem;
     flex-shrink: 0;   
     text-align: center;
-    padding-top: 1.5rem; 
+    padding-top: 1.5rem;
+    text-decoration: none; 
+    transition: color 0.3s;
+    transition: text-decoration 0.3s ease;
 }
+#anchor:hover {
+    text-decoration: underline; /* Underline text on hover */
+
+}
+
+
+

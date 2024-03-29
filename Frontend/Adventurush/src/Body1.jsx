@@ -9,7 +9,6 @@ import riverRaftingImg from "./Photos/River-Rafting-1.jpg";
 import scubaDivingImg from "./Photos/Scuba-1.jpg";
 export default function Body1() {
  
-  const [currentSlide, setCurrentSlide] = useState(0);
   const slider = [
     {
       id: "1",
@@ -42,27 +41,34 @@ export default function Body1() {
       img: scubaDivingImg,
     }
   ];
-  const prevBtn2 = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slider.length - 1 : prevSlide - 1));
-  };
-
-  const nextBtn2 = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === slider.length - 1 ? 0 : prevSlide + 1));
-  };
+ 
+  const[currentIndex,setCurrentIndex]=useState(1);
+  const goToPrevious=()=>{
+    const isFirstSlide= currentIndex === 0;
+    const newIndex = isFirstSlide ? slider.length -1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  }
+  const goToNext=()=>{
+    const isFirstSlide= currentIndex === slider.length-1;
+    const newIndex = isFirstSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }
   return (
     <div className={styles.Body1}>
       <h1 className={styles.heading1}>YOUR PLATFORM FOR <br/>SAFE ADVENTURES</h1>
       <button className={styles.chooseBtn} > Choose your Adventure</button>
       <div className={styles.sliderBody}>
 
-        <button  className={styles.prevBtn} onClick={prevBtn2}><p>&lt;</p></button>
-        <button  className={styles.nextBtn} onClick={nextBtn2}><p>&gt;</p></button> 
-                {slider.map((sl)=>{
+        <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
+        <button onClick={goToNext} className={styles.nextBtn}><p>&gt;</p></button> 
+                {
+                  slider.slice(currentIndex, currentIndex + 3).map((sl)=>{
                   return(<div className={styles.slide}  key={sl.id}>
-                    <img src={sl.img} alt={sl.title} />
+                   <img src={sl.img} alt={sl.title} />
                     <p className={styles.sliderTitle}>{sl.title}</p>
                   </div>)
-                })}  
+                })
+                }  
 
       </div>
     </div>

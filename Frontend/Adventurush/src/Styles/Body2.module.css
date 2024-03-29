@@ -1,0 +1,132 @@
+.Body2
+{
+    background-color: black;
+    height: 95rem;
+    width: 118rem;
+    padding-bottom: 2rem;
+    /* border: 5px solid green */
+    ;
+}
+.head1{
+    padding-top: 5rem;
+    margin-left: 10rem;
+    color: white;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.DealsMainDiv
+{
+    padding-bottom: 5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    margin-top: 3rem;
+    width: 118rem;
+    height: 25.8125rem;
+    flex-shrink: 0;
+    /* border: 5px solid pink; */
+ 
+}
+.DealSlide
+{
+    overflow: hidden;
+    /* margin-top: 1rem; */
+    margin-left: 10rem;
+    position: relative;
+    display: flex;
+    width: 25.25rem;
+    height: 25.25rem;
+    /* border: 2px solid red; */
+    border-radius: 20px ;
+}
+.DealSlide img{
+    border-radius: 1rem;
+}
+
+.DealTitle{
+    z-index: 1;
+    color: white;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 85%;
+    left: 50%; 
+}
+.subBody{
+    height: 50rem;
+    background-image: url("https://www.adventurush.com/wp-content/uploads/2022/08/ETI-1.jpg");
+
+}
+
+.subBodyHeading
+{
+    padding-top: 5rem;
+    margin-left: 10rem;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.prevBtn,.nextBtn{
+    background-color: #F00;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 25rem;
+    z-index: 1;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-110%);
+}
+.chooseBtn{
+    position: relative;
+    margin-top: .5rem;
+    margin-left: 10rem;
+    width: 11.6875rem;
+    height: 3.375rem;
+    border-radius: 0rem;
+    flex-shrink: 0;
+    background: #F00;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.nextBtn{
+    right: 9.8rem;
+}
+.prevBtn{
+    left: 7.5rem;
+}
+#list{
+    color: #FFF;
+font-family: Poppins;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 2rem;
+margin-left: 10rem;
+transition: transition smooth;
+}
+#list:hover{
+    color: black;
+}
+
+hr{
+    margin-top: .7rem;
+    width: 43rem;
+    height: 0.125rem;
+    margin-left: 10rem;
+    background-color: #FFF;
+}
