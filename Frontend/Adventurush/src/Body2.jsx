@@ -19,27 +19,27 @@ function Body2() {
           title: "Srinagar",
           img: "https://www.adventurush.com/wp-content/uploads/2024/02/shutterstock_1561227292-1.jpg",
         },
-        // {
-        //   id: "4",
-        //   title: "Manali",
-        //   img: "https://www.adventurush.com/wp-content/uploads/2024/02/shutterstock_1405496783-2-1.jpg",
-        // },
-        // {
-        //   id: "5",
-        //   title: "Paragliding",
-        //   img: "https://www.adventurush.com/wp-content/uploads/2023/03/Paragliding-manali-768x529.jpg",
-        // },
-        // {
-        //   id: "6",
-        //   title: "Scuba Diving",
-        //   img: "https://www.adventurush.com/wp-content/uploads/2024/02/Thumbnail-2-6-1.jpg",
-        // },
-        // {
-        //     id: "8",
-        //     title: "More Offers",
-        //     img: " https://www.adventurush.com/wp-content/uploads/2024/02/4-15-1.jpg",
+        {
+          id: "4",
+          title: "Manali",
+          img: "https://www.adventurush.com/wp-content/uploads/2024/02/shutterstock_1405496783-2-1.jpg",
+        },
+        {
+          id: "5",
+          title: "Paragliding",
+          img: "https://www.adventurush.com/wp-content/uploads/2023/03/Paragliding-manali-768x529.jpg",
+        },
+        {
+          id: "6",
+          title: "Scuba Diving",
+          img: "https://www.adventurush.com/wp-content/uploads/2024/02/Thumbnail-2-6-1.jpg",
+        },
+        {
+            id: "8",
+            title: "More Offers",
+            img: " https://www.adventurush.com/wp-content/uploads/2024/02/4-15-1.jpg",
            
-        // }
+        }
       ];
   return (
     <div className={styles.Body2}>

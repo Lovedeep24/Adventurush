@@ -21,7 +21,7 @@
 .navbar{
     border: 1px solid transparent;
     width: 118rem;
-    height: 5.5rem;
+    height: 8.5rem;
     flex-shrink: 0;
     background: #000;
 }
@@ -57,6 +57,8 @@ background: #FFF;
     text-decoration: underline; /* Underline text on hover */
 
 }
-
+.logo{
+    display: inline-block;
+}
 
 
