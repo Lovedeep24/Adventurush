@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { useState } from 'react';
 import styles from "./Styles/Body1.module.css";
 import bikeExpeditionImg from "./Photos/bike-expedition.jpg";

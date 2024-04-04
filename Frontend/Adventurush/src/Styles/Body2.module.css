@@ -19,35 +19,41 @@
 }
 .DealsMainDiv
 {
+    gap: 2rem;
     padding-bottom: 5rem;
     overflow: hidden;
     position: relative;
     display: flex;
     margin-top: 3rem;
-    width: 118rem;
-    height: 25.8125rem;
+    margin-left: 10rem;
+    width: 105rem;
+    height: 20.8125rem;
     flex-shrink: 0;
     /* border: 5px solid pink; */
  
 }
+
 .DealSlide
 {
+    margin-left: 2rem;
     overflow: hidden;
-    /* margin-top: 1rem; */
-    margin-left: 10rem;
+    flex-shrink: 0;
+    margin-top: 1rem;
     position: relative;
     display: flex;
-    width: 25.25rem;
-    height: 25.25rem;
+    width: 27rem;
+    height: 20.25rem;
     /* border: 2px solid red; */
-    border-radius: 20px ;
+    border-radius: 2rem ;
 }
 .DealSlide img{
-    border-radius: 1rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .DealTitle{
-    z-index: 1;
     color: white;
     font-family: Poppins;
     font-size: 1rem;
@@ -103,10 +109,10 @@
     line-height: normal;
 }
 .nextBtn{
-    right: 9.8rem;
+    right: .5rem;
 }
 .prevBtn{
-    left: 7.5rem;
+    left: rem;
 }
 #list{
     color: #FFF;

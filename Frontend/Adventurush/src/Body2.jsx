@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./Styles/Body2.module.css";
+import { Link } from "react-router-dom";
 function Body2() {
 
     const Deals = [
@@ -41,12 +42,22 @@ function Body2() {
            
         }
       ];
+const[currentIndex,setCurrentIndex]=useState(3);
+
+function goToNext()
+{
+  setCurrentIndex((prevIndex) => (prevIndex + 1) % Deals.length);
+}
+function goToPrevious()
+{
+  setCurrentIndex((prevIndex) => (prevIndex - 1 + Deals.length) % Deals.length);
+}
   return (
     <div className={styles.Body2}>
       <h1 className={styles.head1}>EXHILARATING <br/>DEALS</h1>
       <div className={styles.DealsMainDiv}>
-      <button  className={styles.prevBtn}><p>&lt;</p></button>
-        <button  className={styles.nextBtn}><p>&gt;</p></button> 
+      <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
+        <button  onClick={goToNext}className={styles.nextBtn}><p>&gt;</p></button> 
       {
            Deals.map((D)=>{
             return(<div className={styles.DealSlide}  key={D.id}>
@@ -58,7 +69,7 @@ function Body2() {
       </div>
       <div className={styles.subBody}>
         <h1 className={styles.subBodyHeading}>EXPERIENCE<br/>THE IMPOSSIBLE</h1>
-        <button className={styles.chooseBtn} >Explore More</button>
+        <button className={styles.chooseBtn} ><Link to="More">Explore More</Link></button>
         <li id={styles.list}>Auntheticate adventure to set your pulse racing</li>
         <hr></hr>
         <li id={styles.list}> verified vendors across 75+ safety & quality guidelines</li>

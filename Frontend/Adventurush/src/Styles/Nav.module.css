@@ -60,5 +60,7 @@ background: #FFF;
 .logo{
     display: inline-block;
 }
-
+.mainNav{
+    position: sticky;
+}
 
