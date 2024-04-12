@@ -6,30 +6,29 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 37.125rem;
+    width: 52.125rem;
     height: 3.1875rem;
     flex-shrink: 0;
     border-radius: 1.875rem;
     border: 1px solid #FFF;
     background: #000;
-    margin-top: 1.44rem;
-    margin-bottom: 0.06rem;
-    margin-left: 42.16rem;
+    /* margin-top: 1.44rem; */
+    margin-bottom: 0.09rem;
+    margin-left: 32.16rem;
     padding-left: 3rem;
-
 }
 .navbar{
     border: 1px solid transparent;
     width: 118rem;
-    height: 8.5rem;
+    height: 5.5rem;
     flex-shrink: 0;
     background: #000;
 }
 
 /* .secondNav
 {
-    width: 119.5rem;
-height: 4.5rem;
+width: 119.5rem;
+height: 3.5rem;
 flex-shrink: 0;
 border: 1px solid #000;
 background: #FFF;
@@ -45,13 +44,10 @@ background: #FFF;
     border: 1px solid #D9D9D9;
     background: #FFF;
     width: 24.87%;
-    height: 4.4rem;
+    height: 3.4rem;
     flex-shrink: 0;   
     text-align: center;
     padding-top: 1.5rem;
-    text-decoration: none; 
-    transition: color 0.3s;
-    transition: text-decoration 0.3s ease;
 }
 #anchor:hover {
     text-decoration: underline; /* Underline text on hover */
@@ -61,6 +57,7 @@ background: #FFF;
     display: inline-block;
 }
 .mainNav{
-    position: sticky;
+    position: fixed;
+    z-index: 2;
 }
 
