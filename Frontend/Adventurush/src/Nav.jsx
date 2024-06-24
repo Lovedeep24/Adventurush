@@ -7,7 +7,7 @@ export default function Nav() {
       <>
       <div className={styles.mainNav}>
         <div className={styles.navbar}>
-        <h2 className="logo"><Link to="/">Adventuruh</Link></h2>
+        <h2 className="logo"><Link to="/">Adventuruh</Link><img src=''></img></h2>
         <input className={styles.searchbar} type='text' name='search' id='search' placeholder='Search Destination or Experince'/>
         </div>
         <div className={styles.secondNav}>

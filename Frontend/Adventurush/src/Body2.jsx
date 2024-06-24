@@ -42,16 +42,17 @@ function Body2() {
            
         }
       ];
-const[currentIndex,setCurrentIndex]=useState(3);
-
-function goToNext()
-{
-  setCurrentIndex((prevIndex) => (prevIndex + 1) % Deals.length);
-}
-function goToPrevious()
-{
-  setCurrentIndex((prevIndex) => (prevIndex - 1 + Deals.length) % Deals.length);
-}
+      const[startIndex,setStartIndex]=useState(0);
+      const goToPrevious=()=>{
+        if (startIndex > 0) {
+          setStartIndex(startIndex - 1);
+        }
+      }
+      const goToNext=()=>{
+        if (startIndex < slider.length - 3) {
+          setStartIndex(startIndex + 1);
+        }
+      }
   return (
     <div className={styles.Body2}>
       <h1 className={styles.head1}>EXHILARATING <br/>DEALS</h1>
@@ -59,7 +60,7 @@ function goToPrevious()
       <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
         <button  onClick={goToNext}className={styles.nextBtn}><p>&gt;</p></button> 
       {
-           Deals.map((D)=>{
+           Deals.slice(startIndex, startIndex + 3).map((D)=>{
             return(<div className={styles.DealSlide}  key={D.id}>
                 <img src={D.img} alt={D.title} />
                 <p className={styles.DealTitle}>{D.title}</p>

@@ -25,14 +25,14 @@
     background: #000;
 }
 
-/* .secondNav
+.secondNav a
 {
 width: 119.5rem;
 height: 3.5rem;
 flex-shrink: 0;
-border: 1px solid #000;
+text-decoration: none;
 background: #FFF;
-} */
+}
 #anchor{
     color: #000;
     font-family: Poppins;
@@ -48,10 +48,14 @@ background: #FFF;
     flex-shrink: 0;   
     text-align: center;
     padding-top: 1.5rem;
+    /* text-decoration: none; */
 }
 #anchor:hover {
-    text-decoration: underline; /* Underline text on hover */
+    text-decoration: underline; 
 
+}
+#anchor:visited{
+    text-decoration: none;
 }
 .logo{
     display: inline-block;

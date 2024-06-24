@@ -41,16 +41,16 @@ export default function Body1() {
     }
   ];
  
-  const[currentIndex,setCurrentIndex]=useState(0);
+  const[startIndex,setStartIndex]=useState(0);
   const goToPrevious=()=>{
-    const isFirstSlide= currentIndex === 0;
-    const newIndex = isFirstSlide ? slider.length -1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+    if (startIndex > 0) {
+      setStartIndex(startIndex - 1);
+    }
   }
   const goToNext=()=>{
-    const isFirstSlide= currentIndex === slider.length-1;
-    const newIndex = isFirstSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+    if (startIndex < slider.length - 3) {
+      setStartIndex(startIndex + 1);
+    }
   }
   return (
     <div className={styles.Body1}>
@@ -61,7 +61,7 @@ export default function Body1() {
         <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
         <button onClick={goToNext} className={styles.nextBtn}><p>&gt;</p></button> 
                 {
-                  slider.map((sl)=>{
+                  slider.slice(startIndex, startIndex + 3).map((sl)=>{
                   return(<div className={styles.slide}  key={sl.id}>
                    <img src={sl.img} alt={sl.title} />
                     <p className={styles.sliderTitle}>{sl.title}</p>
