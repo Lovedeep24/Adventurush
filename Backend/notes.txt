@@ -1,0 +1,6 @@
+-D is used to install anything as a dev depemdencies which mean the package we require only at the time of development but when we make it llive or deploy it then we dont need that particular package
+
+npm install -D nodemon --> this will install nodemon as a dev dependency
+node js ensures we can do synchronus as well as asynchronus programming
+Express on 5th FEB
+2.Express is a framework of nodejs
