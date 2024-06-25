@@ -19,41 +19,12 @@
 }
 .navbar{
     border: 1px solid transparent;
-    width: 118rem;
+    width: 117.7rem;
     height: 5.5rem;
     flex-shrink: 0;
     background: #000;
 }
 
-.secondNav a
-{
-width: 119.5rem;
-height: 3.5rem;
-flex-shrink: 0;
-text-decoration: none;
-background: #FFF;
-}
-#anchor{
-    color: #000;
-    font-family: Poppins;
-    font-size: 1.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: inline-block;
-    border: 1px solid #D9D9D9;
-    background: #FFF;
-    width: 24.87%;
-    height: 3.4rem;
-    flex-shrink: 0;   
-    text-align: center;
-    padding-top: 1.5rem;
-    /* text-decoration: none; */
-}
-#anchor:hover {
-    text-decoration: underline; 
-
-}
 #anchor:visited{
     text-decoration: none;
 }
@@ -64,4 +35,47 @@ background: #FFF;
     position: fixed;
     z-index: 2;
 }
+.anc{
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    height: 4rem;
+    width: 24.66%;
+    border: 1px solid black ;
+    font-family: Poppins;
+    font-size: 1.875rem;
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1.5rem;
+    background-color: rgb(250, 250, 250);
+    /* border: 2px solid yellow; */
+}
+.anc::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #007bff; /* Color of the underline */
+    position: absolute;
+    bottom: -2px; /* Position it at the bottom */
+    left: 0;
+    transition: width 0.3s ease; /* Transition for smooth effect */
+}
+
+.anc:hover::before {
+    width: 100%;
+}
+.secondNav{
+    display: flex;
+    
+
+}
+.secondNav a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
 
