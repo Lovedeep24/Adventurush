@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styles from "./Styles/Body4.module.css";
 import Discover from "./Photos/discover-inspired.png";
 import Inspire from "./Photos/Custom-Adv.png";

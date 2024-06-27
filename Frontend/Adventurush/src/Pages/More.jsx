@@ -1,9 +1,9 @@
 import React from 'react'
-
+import styles from "../Styles/More.module.css"
 export default function More() {
   return (
     <>
-      <h1>more</h1>
+      <div className={styles.head}></div>
     </>
   )
 }

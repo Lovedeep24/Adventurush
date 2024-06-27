@@ -98,7 +98,7 @@ line-height: normal;
     margin-left: 5rem;
     position: relative;
     display: flex;
-    width: 120.25rem;
+    width: 16.25rem;
     /* border: 2px solid red; */
     border-radius: 20px ;
 }
@@ -125,4 +125,17 @@ line-height: normal;
 .prevBtn{
     left: 2.5rem;
 }
+.slideLink
+{
+   
+    transition: transform 0.5s ease;
+    margin-left: 1rem;
+    position: relative;
+    display: flex;
+    width: 19.75rem;
+    /* border: 2px solid red; */
+    border-radius: 20px ; 
+   
+}
+
 
