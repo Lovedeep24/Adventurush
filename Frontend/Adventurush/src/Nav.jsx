@@ -9,6 +9,9 @@ export default function Nav() {
         <div className={styles.navbar}>
         <h2 className={styles.logo}><Link to="/">Adventuruh</Link><img src=''></img></h2>
         <input className={styles.searchbar} type='text' name='search' id='search' placeholder='Search Destination or Experince'/>
+        <a className={styles.call}>C</a>
+        <a className={styles.profile}>P</a>
+        <a className={styles.cart}>CA</a>
         </div>
         <div className={styles.secondNav}>
            <div className={styles.anc}><a><Link to="Offers">Offers</Link></a></div>

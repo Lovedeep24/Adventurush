@@ -8,7 +8,6 @@ import skydivingImg from "./Photos/Sky-diving-.jpg";
 import bungeeJumpImg from "./Photos/Bungee-Jumping-1.jpg";
 import riverRaftingImg from "./Photos/River-Rafting-1.jpg";
 import scubaDivingImg from "./Photos/scuba_latest.jpg";
-
 import More from './Pages/More';
 
 export default function Body1() {
@@ -68,7 +67,7 @@ export default function Body1() {
     <>
     <div className={styles.Body1}>
       <h1 className={styles.heading1}>YOUR PLATFORM FOR <br/>SAFE ADVENTURES</h1>
-     <div className={styles.chooseBtn} > Choose your Adventure</div>
+      <Link to={More}> <div  className={styles.chooseBtn} > Choose your Adventure  </div> </Link>
       <div className={styles.sliderBody}>
 
         <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
@@ -85,8 +84,8 @@ export default function Body1() {
                      </> )
                 })
                 }  
-
       </div>
+      <p className={styles.slogan}>AUTHENTICATE EXPERINCES <br/>FROM VERIFIED PARTNER</p>
     </div>
     </>
   )

@@ -44,25 +44,25 @@ function Body2() {
           img: himalyan_bungee,
         },
         {
-            id: "8",
+            id: "7",
             title: "Paragliding",
             img: Paragliding_Manali,
            
         },
         {
-          id: "9",
+          id: "8",
           title: "More Offers",
           img: ViewMore,
          
       }
       ];
       const[startIndex,setStartIndex]=useState(0);
-      const Previous=()=>{
+      const previous=()=>{
         if (startIndex > 0) {
           setStartIndex(startIndex - 1);
         }
       }
-      const Next=()=>{
+      const next=()=>{
         if (startIndex < slider.length - 3) {
           setStartIndex(startIndex + 1);
         }
@@ -71,13 +71,13 @@ function Body2() {
     <div className={styles.Body2}>
       <h1 className={styles.head1}>EXHILARATING <br/>DEALS</h1>
       <div className={styles.DealsMainDiv}>
-      <button onClick={Previous} className={styles.prevBtn}><p>&lt;</p></button>
-        <button  onClick={Next}className={styles.nextBtn}><p>&gt;</p></button> 
+      <button onClick={previous} className={styles.prevBtn}><p>&lt;</p></button>
+        <button  onClick={next}className={styles.nextBtn}><p>&gt;</p></button> 
       {
-           Deals.slice(startIndex, startIndex + 3).map((D)=>{
-            return(<div className={styles.DealSlide}  key={D.id}>
-                <img src={D.img} alt={D.title} />
-                <p className={styles.DealTitle}>{D.title}</p>
+           Deals.slice(startIndex, startIndex + 3).map((d)=>{
+            return(<div className={styles.DealSlide}  key={d.id}>
+                <img src={d.img} alt={d.title} />
+                <p className={styles.DealTitle}>{d.title}</p>
               </div>)
            })
       }

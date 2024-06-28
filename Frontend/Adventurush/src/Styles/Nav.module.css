@@ -14,15 +14,16 @@
     background: #000;
     /* margin-top: 1.44rem; */
     margin-bottom: 0.09rem;
-    margin-left: 32.16rem;
+    margin-left: 25.16rem;
     padding-left: 3rem;
 }
 .navbar{
     border: 1px solid transparent;
-    width: 117.7rem;
+    width: 117rem;
     height: 5.5rem;
     flex-shrink: 0;
     background: #000;
+    padding-top: 2rem;
 }
 
 #anchor:visited{
@@ -40,7 +41,7 @@
     display: flex;
     flex-shrink: 0;
     height: 4rem;
-    width: 24.66%;
+    width: 24.91%;
     border: 1px solid black ;
     font-family: Poppins;
     font-size: 1.875rem;

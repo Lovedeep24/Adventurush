@@ -4,11 +4,24 @@
 }
 .Body1{
     position:relative;
-    width: 118rem;
+    width: 117rem;
 height: 55.625rem;
 flex-shrink: 0;
 /* border:2px solid black; */
 overflow: hidden;
+}
+.slogan{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 70rem;
+    margin-top:-20rem;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.75rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
 }
 .Body1::before {
     content: "";
@@ -76,8 +89,6 @@ line-height: normal;
     height: 20.8125rem;
     flex-shrink: 0;
     transition: transform 0.5s ease;
-    /* overflow: hidden; */
-    /* border: 2px solid green; */
 }
 .sliderTitle
 {
