@@ -9,6 +9,7 @@ import bungeeJumpImg from "./Photos/Bungee-Jumping-1.jpg";
 import riverRaftingImg from "./Photos/River-Rafting-1.jpg";
 import scubaDivingImg from "./Photos/scuba_latest.jpg";
 import More from './Pages/More';
+import Offers from './Pages/Offers';
 
 export default function Body1() {
  
@@ -67,19 +68,17 @@ export default function Body1() {
     <>
     <div className={styles.Body1}>
       <h1 className={styles.heading1}>YOUR PLATFORM FOR <br/>SAFE ADVENTURES</h1>
-      <Link to={More}> <div  className={styles.chooseBtn} > Choose your Adventure  </div> </Link>
+      <Link to={Offers}><div  className={styles.chooseBtn} >Choose your Adventure  </div></Link>
       <div className={styles.sliderBody}>
 
-        <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
-        <button onClick={goToNext} className={styles.nextBtn}><p>&gt;</p></button> 
+        <button onClick={goToPrevious}  className={styles.prevBtn} aria-label="Previous Slide"><p>&lt;</p></button>
+        <button onClick={goToNext} className={styles.nextBtn} aria-label="Next Slide"><p>&gt;</p></button> 
                 {
                   slider.slice(startIndex, startIndex + 3).map((sl)=>{
                   return(<>
                   <Link to={sl.alias} key={sl.id}  className={styles.slideLink}>
-                   <div className={styles.slide} key={sl.id}  >
                    <img src={sl.img} alt={sl.title} />
                       <p className={styles.sliderTitle}>{sl.title}</p>
-                    </div>
                     </Link>
                      </> )
                 })

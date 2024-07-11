@@ -1,17 +1,20 @@
 import React from 'react'
 import styles from "./Styles/Nav.module.css";
 import { Link } from "react-router-dom";
+import logo from "./Photos/Logo.png";
 export default function Nav() {
   return (
-    <>
       <>
       <div className={styles.mainNav}>
         <div className={styles.navbar}>
-        <h2 className={styles.logo}><Link to="/">Adventuruh</Link><img src=''></img></h2>
-        <input className={styles.searchbar} type='text' name='search' id='search' placeholder='Search Destination or Experince'/>
-        <a className={styles.call}>C</a>
-        <a className={styles.profile}>P</a>
-        <a className={styles.cart}>CA</a>
+        <Link to="/" className={styles.logo}><img src={logo}></img></Link>
+        <input className={styles.searchbar} type='text' name='search' id='search' placeholder='Search Destinations or Experience'/>
+        <div className={styles.contacts}>
+        <div className={styles.call}><img src="./Photos/telephone.jpg" alt="call"/></div>
+        <a className={styles.call} href='./Photos/telephone.jpg'></a>
+        <div className={styles.profile}><img src="./" alt="profile"/></div>
+        <div className={styles.cart}>CA</div>
+        </div>
         </div>
         <div className={styles.secondNav}>
            <div className={styles.anc}><a><Link to="Offers">Offers</Link></a></div>
@@ -21,6 +24,5 @@ export default function Nav() {
       </div>
       </div>
       </>
-    </>
   )
 }
