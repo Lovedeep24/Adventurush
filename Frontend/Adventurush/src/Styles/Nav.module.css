@@ -16,7 +16,7 @@
     /* padding-top: 2rem; */
 }
 .searchbar{
-    margin-left: 13rem;
+    margin-left: 16rem;
     font-size: 1rem;
     color: #FFF; 
     font-style: normal;
@@ -107,6 +107,38 @@
 #anchor:visited{
     text-decoration: none;
 }
+.logos{
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    margin-left: 70rem ;
+    margin-top: -2rem;
+    justify-content: space-between;
+}
+.loginLogo
+{
+    height: 2rem;
+    width: 2rem;
+    /* border: 2px solid red; */
+    /* margin-left: 5rem; */
+}
+.loginLogo svg {
+    color: white;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+  }
+.signupLogo
+{
+    height: 2rem;
+    width: 2rem;
+    /* border: 2px solid red; */
+    /* margin-left: 5rem; */
+}
+.signupLogo svg {
+    color: white;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+  }
 
 
 

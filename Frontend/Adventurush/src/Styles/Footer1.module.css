@@ -1,0 +1,25 @@
+.footerBody
+{
+    width: 99.8%;
+    height: 60rem;
+    background-color: #292929;
+    border: 2px solid red;
+    padding-left: 5rem;
+}
+.logo
+{
+    width: 10%;
+    height: 5rem;
+    border: 2px solid blue;
+}
+.socialMediaHandles{
+    height: 4rem;
+    width: 15%;
+    display: flex;
+    border: 2px solid yellow;
+    justify-content: space-between
+}
+#social{
+    width: 20%;
+    border: 1px solid orange;
+}

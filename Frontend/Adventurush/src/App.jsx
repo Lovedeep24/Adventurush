@@ -20,6 +20,8 @@ import Trekking from './Pages/Trekking';
 import River_Rafting from './Pages/River_Rafting';
 import Bungee_Jumping from './Pages/Bungee_Jumping';
 import Scuba_Diving from './Pages/Scuba_Diving';
+import Login from './Login';
+import Signup from './Signup';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +37,8 @@ const router = createBrowserRouter(
       <Route path="River_Rafting" element={<River_Rafting />} />
       <Route path="Bungee_Jump" element={<Bungee_Jumping />} />
       <Route path="Scuba_Diving" element={<Scuba_Diving />} />
+      <Route path="Login" element={<Login/>} />
+      <Route path="Signup" element={<Signup/>} />
     </Route>
   )
 );

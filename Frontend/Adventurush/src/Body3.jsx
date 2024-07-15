@@ -17,7 +17,7 @@ export default function Body3() {
         },
         {
           id: "2",
-          title: "Family Adventure",
+          title:"Family Trekking",
           sub:"Brave together",
           img: Family,
         },

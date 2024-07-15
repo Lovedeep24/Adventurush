@@ -1,0 +1,133 @@
+.main{
+    position: relative;
+    display: flex;
+}
+.empty{
+    height: 8.4rem;
+    background-color: black;
+    /* border: 2px solid blue; */
+}
+h1{
+    color: black;
+}
+.signup
+{
+    /* padding-top: 3rem; */
+    
+    text-align: center;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 60vh;
+    width: 30%;
+    margin-left: 37rem;
+    z-index: 2;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.3);
+}
+
+.background
+{
+    position: relative;
+    /* margin-top: 2.5rem; */
+    background-color:bisque;
+    height: 77vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+.background img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.name
+{
+    padding-left: 6rem;
+    margin-top: 1rem ;
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    color: white;
+    /* text-decoration: underline; */
+}
+.name::placeholder 
+{
+    color: white; /* Placeholder text color */
+    font-family: Montserrat, sans-serif;
+    font-size: 15px; /* Font size */
+    opacity: 5; /* Opacity (default is 0.7 in most browsers) */
+}
+.name:focus 
+{
+    border-bottom-color: black; /* Change bottom border color on focus */
+    box-shadow: none; /* Remove default focus shadow */
+}
+
+.email
+{
+    padding-left: 6rem;
+    margin-top: 1rem ;
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    color: white;
+    /* text-decoration: underline; */
+}
+.email::placeholder 
+{
+    color: white; /* Placeholder text color */
+    font-family: Montserrat, sans-serif;
+    font-size: 15px; /* Font size */
+    opacity: 5; /* Opacity (default is 0.7 in most browsers) */
+  }
+  .email:focus
+{
+    border-bottom-color: black; /* Change bottom border color on focus */
+    box-shadow: none; /* Remove default focus shadow */
+}
+
+.password
+{
+    padding-left: 6rem;
+    margin-top: 1rem ;
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    color: white;
+    /* text-decoration: underline; */
+  }
+  .password:focus 
+    {
+        border-bottom-color: black; /* Change bottom border color on focus */
+        box-shadow: none; /* Remove default focus shadow */
+    }
+.password::placeholder 
+    {
+      color: white; /* Placeholder text color */
+      font-family: Montserrat, sans-serif;
+      font-size: 15px; /* Font size */
+      opacity: 5; /* Opacity (default is 0.7 in most browsers) */
+    }
+.signupButton
+{
+        margin-top: 2rem;
+        width: 8.5rem;
+        height: 2.2rem;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        border: none;
+    }

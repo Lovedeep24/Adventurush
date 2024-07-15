@@ -34,19 +34,19 @@ export default function Body1() {
     },
     {
       id: "4",
-      title: "Bungee_Jump",
+      title: "Bungee Jump",
       alias:"Bungee_Jump",
       img: bungeeJumpImg,
     },
     {
       id: "5",
-      title: "River_Rafting",
+      title: "River Rafting",
       alias:"River_Rafting",
       img: riverRaftingImg,
     },
     {
       id: "6",
-      title: "Scuba_Diving",
+      title: "Scuba Diving",
       alias:"Scuba_Diving",
       img: scubaDivingImg,
     }
@@ -69,8 +69,8 @@ export default function Body1() {
     <div className={styles.Body1}>
       <h1 className={styles.heading1}>YOUR PLATFORM FOR <br/>SAFE ADVENTURES</h1>
       <Link to={Offers}><div  className={styles.chooseBtn} >Choose your Adventure  </div></Link>
+      <p className={styles.slogan}>AUTHENTICATE EXPERINCES <br/>FROM VERIFIED PARTNER</p>
       <div className={styles.sliderBody}>
-
         <button onClick={goToPrevious}  className={styles.prevBtn} aria-label="Previous Slide"><p>&lt;</p></button>
         <button onClick={goToNext} className={styles.nextBtn} aria-label="Next Slide"><p>&gt;</p></button> 
                 {
@@ -84,7 +84,7 @@ export default function Body1() {
                 })
                 }  
       </div>
-      <p className={styles.slogan}>AUTHENTICATE EXPERINCES <br/>FROM VERIFIED PARTNER</p>
+      
     </div>
     </>
   )

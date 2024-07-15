@@ -14,7 +14,7 @@ function Body2() {
     const Deals = [
         {
           id: "1",
-          title: "5N/6D Ladakh",
+          title: "Pre Book 5N/6D Ladakh",
           img: ladakh,
           
         },
@@ -57,13 +57,13 @@ function Body2() {
       }
       ];
       const[startIndex,setStartIndex]=useState(0);
-      const previous=()=>{
+      const goToPrevious=()=>{
         if (startIndex > 0) {
           setStartIndex(startIndex - 1);
         }
       }
-      const next=()=>{
-        if (startIndex < slider.length - 3) {
+      const goToNext=()=>{
+        if (startIndex < Deals.length - 3) {
           setStartIndex(startIndex + 1);
         }
       }
@@ -71,14 +71,16 @@ function Body2() {
     <div className={styles.Body2}>
       <h1 className={styles.head1}>EXHILARATING <br/>DEALS</h1>
       <div className={styles.DealsMainDiv}>
-      <button onClick={previous} className={styles.prevBtn}><p>&lt;</p></button>
-        <button  onClick={next}className={styles.nextBtn}><p>&gt;</p></button> 
+      <button onClick={goToPrevious} className={styles.prevBtn}><p>&lt;</p></button>
+        <button  onClick={goToNext}className={styles.nextBtn}><p>&gt;</p></button> 
       {
            Deals.slice(startIndex, startIndex + 3).map((d)=>{
-            return(<div className={styles.DealSlide}  key={d.id}>
+            return(<>
+            <div className={styles.DealSlide}  key={d.id}>
                 <img src={d.img} alt={d.title} />
                 <p className={styles.DealTitle}>{d.title}</p>
-              </div>)
+              </div>
+              </>)
            })
       }
       </div>
@@ -86,9 +88,9 @@ function Body2() {
         <h1 className={styles.subBodyHeading}>EXPERIENCE<br/>THE IMPOSSIBLE</h1>
         <button className={styles.chooseBtn} ><Link to="More">Explore More</Link></button>
         <li id={styles.list}>Auntheticate adventure to set your pulse racing</li>
-        <hr></hr>
+        <hr id={styles.ruler}></hr>
         <li id={styles.list}> verified vendors across 75+ safety & quality guidelines</li>
-        <hr></hr>
+        <hr id={styles.ruler}></hr>
         <li id={styles.list}>Best cancellation & refund polices with no hidden charges</li>
       </div>
     </div>

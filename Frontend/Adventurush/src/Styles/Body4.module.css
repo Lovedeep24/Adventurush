@@ -1,15 +1,57 @@
 .body4{
     display: flex;
-    height:80rem ;
+    height:40rem ;
     width: 100%;
-    /* border: 2px solid red; */
+    background-color: black;
+  
 }
 .left{
-    height: 78rem;
+    background-image: url("../Photos/discover-inspired.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60rem;
     width:50%;
+    color: white;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-left: 3rem;
+    padding-top: 5rem;
 }
 .right{
-    height: 78rem;
-    width:50%rem;
+    color: black;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background-image: url("../Photos/Custom-Adv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60rem;
+    width:50%;
+    padding-left: 3rem;
+    padding-top: 5rem;
 }
 
+.chooseBtn{
+    position: relative;
+    margin-top: .5rem;
+    width: 8.6875rem;
+    height: 2.375rem;
+    border-radius: 0rem;
+    flex-shrink: 0;
+    background: #F00;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style:normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.chooseBtn a{
+    text-decoration: none;
+    color: #FFF;
+}
