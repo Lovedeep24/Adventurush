@@ -1,5 +1,6 @@
 .Body2
 {
+    /* border: 2px solid blue; */
     background-color: black;
     height: 70rem;
     width: 100%;
@@ -26,7 +27,7 @@
     margin-top: 3rem;
     margin-left: 8rem;
     width: 89%;
-    height: 12.8125rem;
+    height: 18.8125rem;
     flex-shrink: 0;
     transition: transform 0.5s ease-in-out;
     /* border: 2px solid pink; */
@@ -66,13 +67,12 @@
 }
 .subBody{
     height: 40rem;
-    width: 99%;
+    width: 100%;
     background-image: url("../Photos/SubBodyImg.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat; /* Prevent the image from repeating */
 
 }
-
 
 .subBodyHeading
 {

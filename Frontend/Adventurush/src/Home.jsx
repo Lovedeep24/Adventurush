@@ -12,7 +12,7 @@ export default function Home() {
       <Body2/>
       <Body3/>
       <Body4/>
-      <Footer1/>
+      {/* <Footer1/> */}
     </div>
   )
 }

@@ -1,4 +1,5 @@
 .Body3{
+    /* border: 2px solid green; */
     width: 100%;
 height: 85rem;
 flex-shrink: 0;
@@ -18,7 +19,7 @@ line-height: 2.875rem;
 margin-left: 10rem;
 }
 .heading2{
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 20.5rem;
 height: 2.875rem;
 color: #FFF;

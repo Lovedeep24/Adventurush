@@ -1,0 +1,52 @@
+.empty
+{
+    height: 137px;
+    background-color: black;
+}
+.headDiv{
+    width: 99.7%;
+    height: 15rem;
+    background-color: black;
+    border: 2px solid black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-left: -2rem;
+    
+}
+.experineceHeading{
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size:xx-large;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+.homeNav{
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: small;
+    font-family: Poppins, sans-serif;
+    color: white;
+    /* border: 1px solid red; */
+}
+.arrows{
+    margin-top: .8rem;
+    color: white;
+}
+
+.arrows svg{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+.experineceNav{
+    /* text-align: center; */
+    text-decoration: none;
+    /* margin-left: 2rem; */
+    margin-top: 1rem;
+    font-size: small;
+    font-family: Poppins, sans-serif;
+    color: rgb(255, 0, 0)
+    /* border: 1px solid red; */
+}

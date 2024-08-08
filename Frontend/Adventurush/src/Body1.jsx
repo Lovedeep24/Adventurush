@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
 import styles from "./Styles/Body1.module.css";
 import bikeExpeditionImg from "./Photos/bike-expedition.jpg";
 import trekkingImg from "./Photos/trekking-1.jpg";
@@ -8,7 +7,7 @@ import skydivingImg from "./Photos/Sky-diving-.jpg";
 import bungeeJumpImg from "./Photos/Bungee-Jumping-1.jpg";
 import riverRaftingImg from "./Photos/River-Rafting-1.jpg";
 import scubaDivingImg from "./Photos/scuba_latest.jpg";
-import More from './Pages/More';
+// import More from './Pages/More';
 import Offers from './Pages/Offers';
 
 export default function Body1() {
@@ -78,7 +77,7 @@ export default function Body1() {
                   return(<>
                   <Link to={sl.alias} key={sl.id}  className={styles.slideLink}>
                    <img src={sl.img} alt={sl.title} />
-                      <p className={styles.sliderTitle}>{sl.title}</p>
+                    <p className={styles.sliderTitle}>{sl.title}</p>
                     </Link>
                      </> )
                 })
